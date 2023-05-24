@@ -1,0 +1,132 @@
+body.background {
+    font-family: 'Monaco', monospace;
+    font-size: 10px;
+    color: #f5deb3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('image/cv_fond.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.95; /* Adjust as needed */
+    overflow: auto;
+}
+
+.content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 40px;
+    width: 100vw;
+    height: 100vh;
+    padding: 5vw;
+    box-sizing: border-box;
+}
+
+.info-box {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    color: #FFFFC9;
+    overflow: auto; /* New line */
+    height: 100%; /* New line */
+    box-sizing: border-box; /* New line */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.image {
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;  /* Ajustez ces valeurs */
+    height: 200px; /* Ajustez ces valeurs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.image img {
+    width: 115%;
+    height: 115%;
+    object-fit: cover;
+}
+
+.personal-info {
+    grid-column: 3;
+    grid-row: 1;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.nom {
+    grid-column: 2;
+    grid-row: 1;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.catch-phrase {
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.experience {
+    grid-column: 3 / span 1.5;
+    grid-row: 2;
+    width: auto;
+    height: auto;
+    overflow: auto;
+
+}
+
+.formation {
+    grid-column: 1 / span 1.5;
+    grid-row: 2;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    
+}
+
+.competences {
+    grid-column: 2;
+    grid-row: 3;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.langues {
+    grid-column: 1;
+    grid-row: 3;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.hobbies {
+    grid-column: 3;
+    grid-row: 3;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
